@@ -26,9 +26,9 @@
 | **Spring MVC** | Spring 子模块  | Web 框架 |
 | **Spring JDBC (`JdbcTemplate`)** |Spring 子模块|  数据访问工具 |
 | **Spring Cache (`@Cacheable`)** | Spring 子模块 | 缓存抽象 |
-| **XGBoost4j** | 机器学习库| `XgboostService.java` 中调用 `XGBoost.loadModel` 加载模型，用 `booster.predict` 进行预测。 |
+| **XGBoost4j** | 机器学习库| 调用 `XGBoost.loadModel` 加载模型，调用 `booster.predict` 进行预测。 |
 | **Jackson** | JSON 处理库 | 在 `XgboostEvaluateService` 中读取 JSON 文件 |
-| **SLF4J + Logback** | 日志门面 + 实现 | `LoggerFactory.getLogger(...)` 在 `XgboostEvaluateService` 等类中使用。 |
+| **SLF4J + Logback** | 日志门面+实现 | 在 `XgboostEvaluateService` 等类中使用。 |
 | **Thymeleaf** | 模板引擎 | 服务端渲染 |
 | **Maven（或 Gradle）** | 项目构建工具| 构筑项目环境 |
 
